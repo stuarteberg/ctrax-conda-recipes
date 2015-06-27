@@ -37,7 +37,20 @@ conda install conda-build jinja2
 Build ctrax from source
 -----------------------
 
+For maximum compatibility, we use conda's version of `gcc` for all c++ packages.
+For now, we have to use a special version of that package, obtained from ilastik's
+binstar channel.
+
 ```
+# Make the ilastik channel available to our setup
+# (Edits ~/.condarc)
+conda config -f --add channels ilastik
+```
+
+Build everything:
+
+```
+cd ctrax-conda-recipes
 conda build ctrax
 ```
 
