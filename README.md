@@ -2,7 +2,7 @@ conda recipes for installing Ctrax
 ==================================
 
 This repo contains recipes for building [Ctrax][1] from source into a [conda][2] environment.
-At the moment, this only works on Linux.
+At the moment, this only works on Linux.  Also, no camera interfaces are compiled in.
 
 [1]: http://ctrax.sourceforge.net/
 [2]: http://conda.pydata.org/docs/
